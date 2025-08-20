@@ -1,7 +1,28 @@
+:root {
+  --background-color: #fff;
+  --text-color: #111;
+  --accent-color: #007bff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #111;
+    --text-color: #fff;
+    --accent-color: #00aaff;
+  }
+}
+.dark-theme {
+  --background-color: #111;
+  --text-color: #fff;
+  --accent-color: #00aaff;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -9,7 +30,8 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-.container h1 {
-  color: #3498db;
-  border-bottom: 2px solid #3498db;
+
+h1 {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }/*# sourceMappingURL=style.css.map */
