@@ -1,37 +1,12 @@
-:root {
-  --background-color: #fff;
-  --text-color: #111;
-  --accent-color: #007bff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #111;
-    --text-color: #fff;
-    --accent-color: #0af;
-  }
-}
-.dark-theme {
-  --background-color: #111;
-  --text-color: #fff;
-  --accent-color: #0af;
-}
-
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #fff;
+  color: #111;
 }
 
 #container {
   width: 960px;
   margin: 0 auto;
   padding: 20px;
-}
-
-h1 {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
 }/*# sourceMappingURL=style.css.map */
